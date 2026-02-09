@@ -2,9 +2,9 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Musician Portfolio | Minimalist</title>
+<title>Benjamin Brückmann | Musician Portfolio</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -32,24 +32,35 @@
         .video-link {
             @apply text-[13px] opacity-70 hover:opacity-100 transition-opacity block;
         }
+        .engraved-text {color: #001a1d;
+            text-shadow: 
+                -1px -1px 2px rgba(0, 0, 0, 0.8), 
+                1px 1px 1px rgba(255, 255, 255, 0.15);
+            letter-spacing: 0.15em;
+        }
     </style>
 </head>
 <body class="antialiased">
-<div class="min-h-screen flex flex-col items-center justify-center py-20 px-6 max-w-2xl mx-auto text-center">
-<nav class="flex gap-8 mb-24">
+<div class="min-h-screen flex flex-col items-center py-16 px-6 max-w-2xl mx-auto text-center">
+<nav class="flex gap-8 mb-16">
 <a class="nav-link" href="#bio">Bio</a>
 <a class="nav-link" href="#videos">Videos</a>
 <a class="nav-link" href="#contact">Contact</a>
 </nav>
+<header class="mb-20">
+<h1 class="engraved-text text-4xl md:text-5xl lg:text-6xl font-bold uppercase">
+            Benjamin Brückmann
+        </h1>
+</header>
 <section class="mb-20 w-full flex justify-center">
 <div class="w-full max-w-sm aspect-[3/4] overflow-hidden">
-<img alt="Artist Portrait" class="w-full h-full object-cover" src="bild.jpg"/>
+<img alt="Benjamin Brückmann Portrait" class="w-full h-full object-cover grayscale" src="bild.jpg"/>
 </div>
 </section>
 <section class="mb-24 px-4" id="bio">
-<p class="text-sm leading-relaxed max-w-md mx-auto font-light">
-                Exploring the intersection of dark electronic textures and haunting acoustic melodies. A sonic journey through atmospheric soundscapes and raw emotion, crafted for the quiet moments of the soul.
-            </p>
+<p class="text-sm leading-relaxed max-w-md mx-auto font-light opacity-80">
+            Exploring the intersection of dark electronic textures and haunting acoustic melodies. A sonic journey through atmospheric soundscapes and raw emotion, crafted for the quiet moments of the soul.
+        </p>
 </section>
 <section class="mb-24 space-y-6" id="videos">
 <div class="space-y-4">
@@ -58,10 +69,10 @@
 <a class="video-link" href="#">Submerged (Visualizer) — 2024</a>
 </div>
 </section>
-<section class="mt-auto" id="contact">
-<a class="text-[12px] tracking-[0.1em] font-light opacity-50 hover:opacity-100 transition-opacity" href="mailto:hello@etherealecho.com">
-                hello@etherealecho.com
-            </a>
+<section class="mt-auto py-10" id="contact">
+<a class="text-[12px] tracking-[0.1em] font-light opacity-50 hover:opacity-100 transition-opacity" href="mailto:hello@benjaminbruckmann.com">
+            hello@benjaminbruckmann.com
+        </a>
 </section>
 </div>
 
