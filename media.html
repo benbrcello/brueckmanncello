@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Media | Benjamin Brückmann</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&amp;family=Tenor+Sans&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background-dark": "#002124",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "name": ["Tenor Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                background-color: #002124;
+            }
+        }
+        .engraved-name {
+            color: rgba(255, 255, 255, 0.15);
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.8), 1px 1px 1px rgba(255, 255, 255, 0.05);
+            letter-spacing: 0.4em;
+            font-family: 'Tenor Sans', sans-serif;
+        }
+        .nav-link {
+            @apply relative transition-colors duration-300;
+        }
+        .nav-link::after {
+            content: '';
+            @apply absolute bottom-[-4px] left-0 w-0 h-[1px] bg-white transition-all duration-300;
+        }
+        .nav-link:hover::after {
+            @apply w-full;
+        }
+        .nav-link-active {
+            @apply text-white;
+        }
+        .nav-link-active::after {
+            @apply w-full bg-white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-background-dark text-slate-300 selection:bg-white/10">
+<header class="fixed top-0 left-0 w-full z-50 bg-background-dark/90 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-10 h-24 flex items-center justify-between">
+<div class="engraved-name text-xl uppercase">
+            Benjamin Brückmann
+        </div>
+<nav>
+<ul class="flex space-x-12 text-[10px] font-light uppercase tracking-[0.3em] text-slate-400">
+<li><a class="nav-link hover:text-white" href="#">Home</a></li>
+<li><a class="nav-link nav-link-active" href="#">Media</a></li>
+<li><a class="nav-link hover:text-white" href="#">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main class="pt-48 pb-32 max-w-5xl mx-auto px-6">
+<section class="space-y-40 mb-48">
+<div class="group relative aspect-video w-full overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" data-alt="Cinematic wide shot of Benjamin Brückmann performing live" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_YDk0QiFt6Hnbax4i1xTehl9fHEQZS9-0eyLH5yb2-IEZcXwKxH0oKoMpNAvhXxGbvmeG1nOVukf2xQdlWRITof9qOrcEfNrMo5850-MmvIi6pcLxPOh7M4PuJjfdbw-Vzm2t9fMLvqgLl1FSfq42VMYr9pBaFsIYhQYoC4MGtnDX5_U_5lRvDQ9z3bC3qbvAPI6_z_KizE8qSU2BzrYM3ciBWVIW3Eyz-mNg11FPYYKp8DPJiOyt0N37nWhngTVfHS0ATY2jdyI"/>
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-700 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white/40 group-hover:bg-white/5 transition-all duration-700">
+<span class="material-icons text-white/40 text-3xl ml-1 group-hover:text-white">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-10 left-0 w-full px-10">
+<p class="text-[9px] uppercase tracking-[0.5em] text-white/40 mb-3">Performance</p>
+<h3 class="text-2xl font-light tracking-[0.2em] uppercase text-white/90">Nocturne in D Minor</h3>
+</div>
+</div>
+<div class="group relative aspect-video w-full overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" data-alt="Close up of hands playing a minimalist piano arrangement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt4w6c7ARAXsB0DbfV9NeB74S5Gb72Hn6OXaMPU8B2MO71pqa4HyaCYKMHl8zpBtoIwTO8YQaQccv0eBVadpKGxHX5pWWKRdnOb4aKsUpFMuMBhSkywvx-cIL41T_Fcw5aB64i5ZSddJfvN6Cs5Fd6YOOioshgXgJlIcxTWrxwgsg8he3w-b27TqqSwnAIK6CXUQcb64mxAyrbxUCzPTqCamIPEm1zdujfTGJ0eiFQSL1AA7uIP94zaqou1wLA6A4_OeD0eoHi5dk"/>
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-700 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white/40 group-hover:bg-white/5 transition-all duration-700">
+<span class="material-icons text-white/40 text-3xl ml-1 group-hover:text-white">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-10 left-0 w-full px-10">
+<p class="text-[9px] uppercase tracking-[0.5em] text-white/40 mb-3">Studio Session</p>
+<h3 class="text-2xl font-light tracking-[0.2em] uppercase text-white/90">Echoes of Silence</h3>
+</div>
+</div>
+<div class="group relative aspect-video w-full overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" data-alt="Abstract atmospheric visuals for a modern classical composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsNwqDp-np9BMLLvHz1zbF4txpP01sI54RVS-74LR-cebtJQ4-6KSCAtkF_8q82w_SY3B-2QG7baMbThEPO58Ofpk6pmTyTndKWkyB2dMrbcE4J5TqUyLwrIUdx9Z1rP2qQTwC7hPHI9NqIIgthxKF6UQBNELtsI-gvaJNd9gwZ6v06y4LxSi6K0NPF7U2OkWkjh2tu-IJ37oo8wBn3CY6_CVCMEPbd5yN5KhEa42cmxhAe8g7w6Uq6HGAhykgqO-qZ0MXu9j-OLI"/>
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-700 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white/40 group-hover:bg-white/5 transition-all duration-700">
+<span class="material-icons text-white/40 text-3xl ml-1 group-hover:text-white">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-10 left-0 w-full px-10">
+<p class="text-[9px] uppercase tracking-[0.5em] text-white/40 mb-3">Music Video</p>
+<h3 class="text-2xl font-light tracking-[0.2em] uppercase text-white/90">The Void Above</h3>
+</div>
+</div>
+</section>
+<section>
+<div class="mb-16 flex items-center justify-between border-b border-white/5 pb-6">
+<h2 class="text-[10px] uppercase tracking-[0.6em] text-white/30">Photography</h2>
+<span class="text-[9px] text-white/10 uppercase tracking-[0.2em]">Archive 23—24</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="aspect-[4/5] overflow-hidden group cursor-crosshair">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" data-alt="Moody black and white portrait of Benjamin Brückmann" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi_mJscQ8IRpgPw4I8koGsYerE8uhWPxq1Ve7VO9FCaW6E25bW8xPSssViAVyctSx1OubG9gzwFYdq_pGgdqs8JWlAacc5bWNE-Whci8xU7NGt1R0DZQIwrlut_ba6GkZtg5nw0JW359iG00nduFRYpLkfP7XRM7SMTsvReNOj9C-n5kLm0PRCkn6cGQZPl90p1Ss71k4Uv9sPuG7OSIkITZu9IQ7R5wTF8mJT386GC820y3bLM6C0Zh_X9UaCeR78_sQtxAa3CvA"/>
+</div>
+<div class="aspect-[4/5] overflow-hidden group cursor-crosshair">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" data-alt="Benjamin Brückmann sitting at a grand piano in shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfdYGjlC5PZHHkzsAVwP_KnjRynxOVefO0gtSp38rlqBYeniOPjJ8IeNIYVlgz91T_cycWZ8dGL7tuYZHunrZ3bbxT0VyTIw0btVa0Y-IRCkiB9tZiqeKKJBgO-v9AOE43nE6MpOvQP8-l9bWIsSoGXy3Ww5lKnDRqt7ujlwzYymQsgfbfJ7j9k7Pv9Ve5QO8BpbVnCFRv_O4LA2v6I8-cpkZGvz6_QQdmcyNBHxGKKxjunp3qfpddSfJ_ZJGrm4xUcgXEtZIRIBE"/>
+</div>
+<div class="aspect-[4/5] overflow-hidden group cursor-crosshair">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" data-alt="Artist portrait in a dark minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzJ8qeQXfcpEnjPeA0N_hwSgfUATCwxdyh_0fz50QOYP0UVwJJbA2oq06FijWQ1VqQkQYoCx_NnBN91Oem5-kni6_CPbfjnw_swgrk-CAKkzGwM_QgwMlkKJCVoQyRzzCJ08iVebaP1cSl-5PHjRiXV97eGzUrJU1hUXH0ZEsyAQM0qubKkvyHgKTw3ftjpHqzktB75FMwOtSFqSQKLqDtmicbc0CGpIFWdX7tbTxbOz9RvXlWNRLw3raa50eZ1YNICVhAsXMp22w"/>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-32 border-t border-white/5 bg-background-dark">
+<div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+<div class="engraved-name text-sm mb-12 opacity-60">
+            B. Brückmann
+        </div>
+<div class="flex space-x-12 text-[9px] uppercase tracking-[0.4em] text-white/20">
+<a class="hover:text-white transition-colors duration-300" href="#">Instagram</a>
+<a class="hover:text-white transition-colors duration-300" href="#">Spotify</a>
+<a class="hover:text-white transition-colors duration-300" href="#">Vimeo</a>
+</div>
+<div class="mt-16 text-[8px] text-white/5 tracking-[0.5em] uppercase">
+            © 2024 Benjamin Brückmann
+        </div>
+</div>
+</footer>
 
+</body></html>
