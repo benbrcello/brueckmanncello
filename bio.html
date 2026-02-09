@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bio | Artist Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "dark-teal": "#002124",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            background-color: #002124;
+            font-family: 'Inter', sans-serif;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        .nav-link {
+            @apply text-[10px] uppercase tracking-[0.25em] opacity-40 hover:opacity-100 transition-opacity;
+        }
+        .engraved-title {
+            @apply text-[13px] uppercase tracking-[0.4em] font-light opacity-30 select-none;
+            text-shadow: -1px -1px 1px rgba(0,0,0,0.5), 1px 1px 1px rgba(255,255,255,0.1);
+        }
+        .bio-text {
+            @apply text-[15px] leading-[1.8] font-light text-center max-w-lg mx-auto;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-white/10">
+<div class="min-h-screen flex flex-col items-center pt-16 pb-24 px-8 max-w-4xl mx-auto">
+<header class="mb-20">
+</header>
+<nav class="flex gap-10 mb-24">
+<a class="nav-link" href="#">Home</a>
+<a class="nav-link !opacity-100" href="#">Bio</a>
+<a class="nav-link" href="#">Videos</a>
+<a class="nav-link" href="#">Contact</a>
+</nav>
+<main class="w-full flex flex-col items-center gap-24">
+<section class="bio-text space-y-8">
+<p>
+                    Born in the quiet corridors of northern landscapes, Ethereal Echo is the manifestation of stillness translated into sound. The project explores the delicate equilibrium between heavy electronic synthesis and the organic fragility of piano and string arrangements.
+                </p>
+<p>
+                    Over the last decade, the focus has remained singular: to capture the texture of isolation. Every composition is a study in space, utilizing silence as much as frequency to evoke a sense of timelessness. The soundscapes are designed not just to be heard, but to be inhabited.
+                </p>
+<p>
+                    Based currently in an isolated studio, the work continues to evolve, shedding unnecessary layers to find the raw, unpolished core of emotional resonance. This is music for the peripheral vision—a companion for the hours when the world slows down.
+                </p>
+</section>
+<section class="w-full max-w-2xl">
+<div class="aspect-[16/9] overflow-hidden grayscale contrast-[1.1] brightness-[0.9]">
+<img alt="Artist in Studio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6tTrJ4sfNPBvQVw6vCrmS-PUmUO0yO3x95yWKWxks5wUpP0s6UX5d6ibFeAeyyB44BwszuncZeI1_Gaibc_Xw3D27SzevdTIjsvUKGcckpyxjklEpV2ul44PwfJCTOlr4Rl1PDhZNJ4QppJ0VVbSVrNzjvufPuzfatlewlJhEXI_FnZf8EnUkFp_yZUBqfd2mHb-ceDR-gqB4TBUlhejx8OCHXHBTJmROotC7--EMp_NuLEqunLQUsG5z2bA4gK-DPYSuNpnjjbU"/>
+</div>
+</section>
+</main>
+<footer class="mt-32">
+<a class="text-[11px] tracking-[0.2em] font-light opacity-30 hover:opacity-100 transition-opacity uppercase" href="mailto:hello@etherealecho.com">
+                Contact Office
+            </a>
+</footer>
+</div>
 
+</body></html>
