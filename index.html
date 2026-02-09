@@ -1,37 +1,68 @@
-<!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <title>Benjamin Brückmann</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    html, body {
-      margin: 10;
-      height: 100%;
-    }
-    body {
-      background: #002124;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: system-ui, sans-serif;
-      color: #ffffff;
-    }
-     h1 {
-      margin-bottom: 20px; /* Abstand zum Bild */
-      font-size: clamp(1.5rem, 4vw, 3rem);
-      letter-spacing: 0.05em;
-    }
-    img {
-      max-width: 90vw;
-      max-height: 50vh;
-      border-radius: 10px;
-    }
-  </style>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Musician Portfolio | Minimalist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "dark-teal": "#002124",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            background-color: #002124;
+            font-family: 'Inter', sans-serif;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .nav-link {
+            @apply text-[11px] uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-opacity;
+        }
+        .video-link {
+            @apply text-[13px] opacity-70 hover:opacity-100 transition-opacity block;
+        }
+    </style>
 </head>
-<body>
-  <h1>Benjamin Brückmann</h1>
-  <br><br>
-  <!--img src="bild.jpg" alt="Brückmann Cello"-->
-</body>
-</html>
+<body class="antialiased">
+<div class="min-h-screen flex flex-col items-center justify-center py-20 px-6 max-w-2xl mx-auto text-center">
+<nav class="flex gap-8 mb-24">
+<a class="nav-link" href="#bio">Bio</a>
+<a class="nav-link" href="#videos">Videos</a>
+<a class="nav-link" href="#contact">Contact</a>
+</nav>
+<section class="mb-20 w-full flex justify-center">
+<div class="w-full max-w-sm aspect-[3/4] overflow-hidden">
+<img alt="Artist Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6tTrJ4sfNPBvQVw6vCrmS-PUmUO0yO3x95yWKWxks5wUpP0s6UX5d6ibFeAeyyB44BwszuncZeI1_Gaibc_Xw3D27SzevdTIjsvUKGcckpyxjklEpV2ul44PwfJCTOlr4Rl1PDhZNJ4QppJ0VVbSVrNzjvufPuzfatlewlJhEXI_FnZf8EnUkFp_yZUBqfd2mHb-ceDR-gqB4TBUlhejx8OCHXHBTJmROotC7--EMp_NuLEqunLQUsG5z2bA4gK-DPYSuNpnjjbU"/>
+</div>
+</section>
+<section class="mb-24 px-4" id="bio">
+<p class="text-sm leading-relaxed max-w-md mx-auto font-light">
+                Exploring the intersection of dark electronic textures and haunting acoustic melodies. A sonic journey through atmospheric soundscapes and raw emotion, crafted for the quiet moments of the soul.
+            </p>
+</section>
+<section class="mb-24 space-y-6" id="videos">
+<div class="space-y-4">
+<a class="video-link" href="#">Midnight Reverie — 2024</a>
+<a class="video-link" href="#">Live at The Void — 2023</a>
+<a class="video-link" href="#">Submerged (Visualizer) — 2024</a>
+</div>
+</section>
+<section class="mt-auto" id="contact">
+<a class="text-[12px] tracking-[0.1em] font-light opacity-50 hover:opacity-100 transition-opacity" href="mailto:hello@etherealecho.com">
+                hello@etherealecho.com
+            </a>
+</section>
+</div>
+
+</body></html>
