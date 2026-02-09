@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Benjamin Brückmann | Musician Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "dark-teal": "#002124",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            background-color: #002124;
+            font-family: 'Inter', sans-serif;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .nav-link {
+            @apply text-[11px] uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-opacity;
+        }
+        .video-link {
+            @apply text-[13px] opacity-70 hover:opacity-100 transition-opacity block;
+        }
+        .engraved-text {color: #001a1d;
+            text-shadow: 
+                -1px -1px 2px rgba(0, 0, 0, 0.8), 
+                1px 1px 1px rgba(255, 255, 255, 0.15);
+            letter-spacing: 0.15em;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<div class="min-h-screen flex flex-col items-center py-16 px-6 max-w-2xl mx-auto text-center">
+<nav class="flex gap-8 mb-16">
+<a class="nav-link" href="bio.html">Bio</a>
+<a class="nav-link" href="videos.html">Media</a>
+<a class="nav-link" href="termine.html">Termine</a>
+<a class="nav-link" href="mailto:brueckmanncello@gmail.com">Kontakt</a>
+</nav>
+<header class="mb-20">
+<h1 class="engraved-text text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-[1.4]">
+            Benjamin <br> Brückmann
+        </h1>
+</header>
+
+<div class="space-y-4">
+<a class="video-link" href="#">Bachelor Recital, HKB Bern - 19.05.2026 13 Uhr</a>
+<a class="video-link" href="#">Wohnzimmerkonzert — tba</a>
+<a class="video-link" href="#">Impro im Wald — tba</a>
+</div>
+</section>
+<section class="mt-auto py-10" id="contact">
+</section>
+</div>
+
+</body></html>
